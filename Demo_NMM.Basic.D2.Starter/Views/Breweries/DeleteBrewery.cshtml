@@ -1,0 +1,55 @@
+﻿@model Demo_NMM.Basic.Models.Brewery
+@{
+    ViewBag.Title = "Delete Brewery";
+}
+<h2>Delete Brewery</h2>
+<p>You are about to delete the following brewery. Click <strong>Delete</strong> or <strong>Cancel</strong>.</p>
+
+<table class="table">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            @Html.Display("Name")
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Address
+        </th>
+        <th>
+            @Html.Display("Address")
+        </th>
+    </tr>
+    <tr>
+        <th>
+            City
+        </th>
+        <th>
+            @Html.Display("City")
+        </th>
+    </tr>
+    <tr>
+        <th>
+            State
+        </th>
+        <th>
+            @Html.Display("State".ToString())
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Zip
+        </th>
+        <th>
+            @Html.Display("Zip")
+        </th>
+    </tr>
+</table>
+
+<form action="/Breweries/DeleteBrewery" method="post">
+    <input type="hidden" name="id" value="@Model.ID" />
+    <input type="submit" name="operation" value="Delete" />
+    <input type="submit" name="operation" value="Cancel" />
+</form>

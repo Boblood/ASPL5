@@ -1,0 +1,76 @@
+﻿@model List<Demo_NMM.Basic.Models.Brewery>
+
+@{
+    ViewBag.Title = "Show Table";
+}
+
+<h2>List of Breweries</h2>
+
+<br />
+
+<a href="/Breweries/CreateBrewery">Add a New Brewery</a>
+
+<table class="table">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Address
+        </th>
+        <th>
+            City
+        </th>
+        <th>
+            State
+        </th>
+        <th>
+            Zip
+        </th>
+        <th>
+            Phone
+        </th>
+        <th>
+
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.ID
+            </td>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.Address
+            </td>
+            <td>
+                @item.City
+            </td>
+            <td>
+                @item.State
+            </td>
+            <td>
+                @item.Zip
+            </td>
+            <td>
+                @item.Phone
+            </td>
+            <td>
+                @*
+                    Demonstration of using finding and using the item index of the list
+                *@
+                <a href="/Breweries/ShowDetail?id=@item.ID" )">View</a>&nbsp;&nbsp;
+                <a href="/Breweries/UpdateBrewery?id=@item.ID">Edit</a>&nbsp;&nbsp;
+                <a href="/Breweries/DeleteBrewery?id=@item.ID">Delete</a>&nbsp;&nbsp;
+            </td>
+        </tr>
+    }
+
+</table>

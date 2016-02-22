@@ -1,0 +1,26 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{20B00962-39F5-4C2A-B989-708C68DC8FC7}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation.txt = Documentation.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_NMM.Basic.D2.Starter", "Demo_NMM.Basic.D2.Starter\Demo_NMM.Basic.D2.Starter.csproj", "{45487450-243E-4BCC-8D8E-E180EC88375A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45487450-243E-4BCC-8D8E-E180EC88375A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45487450-243E-4BCC-8D8E-E180EC88375A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45487450-243E-4BCC-8D8E-E180EC88375A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45487450-243E-4BCC-8D8E-E180EC88375A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

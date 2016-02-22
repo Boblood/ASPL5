@@ -1,0 +1,22 @@
+Solution:       Northern Michigan Microbreweries
+Author:         John E Velis
+Created:        1/15/2015
+Last Modified:  1/30/2015
+
+Project:        D1
+Description:    Instantiate a list of Brewery objects in controller
+				Pass list to View and display as list or table
+
+Project:        Sprint 2
+Description:    Session variable is used to persist brewery list
+				ID property added to Brewery class
+
+Project:        Sprint 3
+Description:    Implement the repository pattern
+				Create the DAL folder
+				Add IBreweryRepository, BreweryRepository, and Data classes to the DAL folder
+				Refactor the BreweryController to use the repository
+				Change the Initialize Data menu item to use the Data.cs class
+
+Project:        Sprint 4
+Description:    Add

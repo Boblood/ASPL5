@@ -1,0 +1,18 @@
+﻿@model List<Demo_NMM.Basic.Models.Brewery>
+
+@{
+    ViewBag.Title = "Show List";
+}
+
+<h2>Breweries</h2>
+
+@foreach (var item in Model)
+{
+    <div>
+        @item.Name<br />
+        @item.Address<br />
+        @item.City, @item.State @item.Zip<br />
+        @item.Phone<hr />
+    </div>
+}
+

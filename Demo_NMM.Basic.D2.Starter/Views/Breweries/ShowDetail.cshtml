@@ -1,0 +1,58 @@
+﻿@model Demo_NMM.Basic.Models.Brewery
+
+@{
+    ViewBag.Title = "Show Detail";
+}
+
+<h2>Show Detail</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            ID
+        </th>
+        <td>
+            @Html.Display("ID")
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Name
+        </th>
+        <td>
+            @Html.Display("Name")
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Address
+        </th>
+        <td>
+            @Html.Display("Address")
+        </td>
+    </tr>
+    <tr>
+        <th>
+            City
+        </th>
+        <td>
+            @Html.Display("City")
+        </td>
+    </tr>
+    <tr>
+        <th>
+            State
+        </th>
+        <td>
+            @Html.Display("State".ToString())
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Zip
+        </th>
+        <td>
+            @Html.Display("Zip")
+        </td>
+    </tr>
+</table>
